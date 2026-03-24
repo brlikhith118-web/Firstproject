@@ -6,6 +6,28 @@ def greet_user(name):
     return f"Hello, {name}! Welcome to the app."
 
 
+# 📋 Task Feature
+tasks = []
+
+def add_task(task):
+    tasks.append(task)
+    return f"Task '{task}' added!"
+
+def view_tasks():
+    return tasks
+
+
+if __name__ == "__main__":
+    print(greet_user("User"))
+    print(add_task("Learn Git"))
+    print(view_tasks())# app.py
+
+print("Welcome to Task Manager App 🚀")
+
+def greet_user(name):
+    return f"Hello, {name}! Welcome to the app."
+
+
 # 🔐 Login Feature
 def login(username, password):
     if username == "admin" and password == "1234":
